@@ -5,6 +5,8 @@ class Segment{
         this.pointB = pointB;
     }
 
+
+
     static fromPointsCoordinates(xA, yA, xB, yB){
         const pointA=new Point(xA,yA);
         const pointB=new Point(xB,yB);
@@ -13,7 +15,7 @@ class Segment{
 
     calculateLength() {
         const deltaX= this.pointA.x - this.pointB.x;
-        const deltaY= this.pointB.y - this.pointB.y;
+        const deltaY= this.pointA.y - this.pointB.y;
         const squareDX= deltaX**2
         const squareDY= deltaY**2
         const squareSum= squareDX+squareDY;
